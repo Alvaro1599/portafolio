@@ -7,7 +7,8 @@
   --backGround-color-red-strong: rgba(239, 55, 36, .2);
   --text-gray: #6C727C;
   --text-light: #FFFFFF;
-  --border: #c2c6ce
+  --border: #c2c6ce;
+
 }
 
 * {
@@ -48,7 +49,7 @@ nav {
 }
 
 .Title {
-  font-size: 2rem;
+  font-size: 2em;
   color: var(--text-light);
 }
 
@@ -66,6 +67,7 @@ nav {
   color: var(--text-light);
   text-decoration: none;
 }
+
 
 .buttonNav {
   background-color: var(--backGround-color-red-light);
@@ -480,8 +482,6 @@ p {
 .inputForm::placeholder {
   color: var(--border);
 }
-
-.textArea {}
 
 .buttonForm {
   width: 30%;
