@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap');
+
+:root {
+  --backGround-color-dark: #212529;
+  --backGround-color-red-light: #EF3724;
+  --backGround-color-card-gray: #F4F5F8;
+  --backGround-color-red-strong: rgba(239, 55, 36, .2);
+  --text-gray: #6C727C;
+  --text-light: #FFFFFF;
+  --border: #c2c6ce
+}
+
+* {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.left {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+
+
+header {
+  width: 100%;
+  z-index: 4;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: var(--backGround-color-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px 0 100px;
+
+}
+
+.Title {
+  font-size: 1.5rem;
+  color: var(--text-light);
+}
+
+.ulContainer {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.ulContainer a {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.buttonNav {
+  background-color: var(--backGround-color-red-light);
+  color: var(--text-light);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+section {
+  padding: 0 100px 0 100px;
+  margin: 60px 0 60px 0;
+  width: 100%;
+  display: flex;
+}
+
+.containerMain {
+  z-index: 1;
+  position: relative;
+  margin-top: 0;
+  background-color: #6C727C;
+  flex-direction: column;
+  height: 70vh;
+  background-image: url("./img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerMain::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.containerText {
+  visibility: hidden;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerText h2,
+p {
+  color: var(--text-light);
+  padding: 5px;
+}
+
+.name {
+  font-size: 1.3rem;
+  color: var(--text-light);
+  padding: 5px;
+}
+
+.containerText label {
+  color: var(--backGround-color-red-light);
+  font-weight: bold;
+}
+
+.containerText p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--backGround-color-red-light);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #6C727C;
+  background-color: var(--backGround-color-red-strong);
+}
+
+
+
+
+
+
+
+
+.containerDescription {
+  width: 100%;
+  display: flex;
+}
+
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.containerInfo h1 {
+  font-weight: 300;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.containerInfo p {
+  text-align: justify;
+  width: 30%;
+  color: #000;
+  font-size: .9rem;
+  margin-bottom: 20px;
+}
+
+.containerInfo h2 {
+  font-size: .9rem;
+  color: var(--backGround-color-red-light);
+  padding-bottom: 20px;
+}
+
+.containerInfo ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.containerInfo ul li::before {
+  content: "○";
+  color: red;
+  font-weight: 900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.containerInfo ul li {
+  font-weight: 900;
+}
+
+.containerInfo ul li label {
+  font-weight: 400;
+}
+
+.buttonDownload {
+  border: solid 1.4px var(--backGround-color-red-light);
+  background-color: var(--text-light);
+  color: var(--backGround-color-red-light);
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.buttonDownload:hover {
+  background-color: var(--backGround-color-red-light);
+  color: var(--text-light);
+}
+
+
+
+
+
+
+
+
+
+
+
+.containerSkill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.containerSkill h1 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.containerSkillProgress {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.containerProgress {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.h2Progress {
+  font-size: .9rem;
+  padding-bottom: 10px;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  border: solid 1px var(--backGround-color-red-light);
+}
+
+.progress1 {
+  font-size: .7rem;
+  color: var(--text-light);
+  border-radius: 10px;
+  margin: 3px;
+  height: 15px;
+  background-color: #EF3724;
+  text-align: center;
+}
+
+.a {
+  width: 96%;
+}
+
+.b {
+  width: 87%;
+}
+
+.c {
+  width: 90%;
+}
+
+.d {
+  width: 87%;
+}
+
+.e {
+  width: 91%;
+}
+
+.f {
+  width: 80%;
+}
+
+.g {
+  width: 86%;
+}
+
+.h {
+  width: 90%;
+}
+
+.material-icons {
+  font-size: 1.5rem;
+  color: var(--backGround-color-red-light);
+}
+
+.containerEducation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+
+.containerEducationEx {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.titleEducation {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.liContainerEx {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.year {
+  width: 30%;
+  background-color: var(--backGround-color-red-light);
+  color: var(--text-light);
+  border-radius: 40px 0 110px 40px;
+  padding: 5px 10px;
+  font-size: .8rem;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--backGround-color-card-gray);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1rem
+}
+
+.card h3 {
+  font-size: .7rem;
+  color: var(--backGround-color-red-light);
+}
+
+.card p {
+  font-size: .8rem;
+}
+
+.card h2,
+h3,
+p {
+  color: #000;
+
+}
+
+.containerEducationExp {
+  width: 45%;
+}
+
+
+.containerWorks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerWorks h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.worksUl {
+  list-style: none;
+  width: 100%;
+}
+
+.cardWorks {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--backGround-color-dark);
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.information h3 {
+  padding: 10px 0 5px 0;
+  font-size: 1rem;
+  color: var(--backGround-color-red-light);
+}
+
+.information h4 {
+  font-size: .6rem;
+  color: var(--text-light);
+}
+
+.containerForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.containerForm h1 {
+  margin-bottom: 20px;
+}
+
+.inputForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid var(--border);
+  outline: none;
+  color: var(--border);
+  transition: all .5s ease-in-out;
+}
+
+.inputForm:focus {
+  border: 2px solid var(--backGround-color-red-light);
+  color: var(--backGround-color-red-light);
+}
+
+.inputForm::placeholder {
+  color: var(--border);
+}
+
+.textArea {}
+
+.buttonForm {
+  width: 30%;
+  border: solid 1.4px var(--backGround-color-red-light);
+  background-color: var(--backGround-color-red-light);
+  color: var(--text-light);
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.containerFooter {
+  width: 100%;
+  background-color: var(--backGround-color-dark);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerInside {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contUnique {
+  width: 30%;
+  height: fit-content;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contUnique h1 {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contUniqueul {
+  font-size: .8rem;
+}
+
+.buttonUpContainer {
+  z-index: 2;
+  position: fixed;
+  width: 25px;
+  border-radius: 30px;
+  background-color: var(--backGround-color-red-light);
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttonUpContainer span {
+  color: var(--text-light);
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
