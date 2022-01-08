@@ -215,6 +215,7 @@ p {
   font-size: 1.3rem;
   cursor: pointer;
   transition: all .3s ease-in-out;
+  text-decoration: none;
 }
 
 .buttonDownload:hover {
