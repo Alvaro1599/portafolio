@@ -94,7 +94,7 @@ section {
   background-color: #6C727C;
   flex-direction: column;
   height: 70vh;
-  background-image: url("./img/header.jpg");
+  background-image: url("./img/header.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
