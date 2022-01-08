@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap');
 
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand'), local('Quicksand'), url(https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap);
+  font-display: swap;
+}
+
 :root {
   --backGround-color-dark: #212529;
   --backGround-color-red-light: #EF3724;
