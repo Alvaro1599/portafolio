@@ -4,7 +4,7 @@
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
-  src: local('Quicksand'), local('Quicksand'), url(https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap);
+  src: local('Quicksand'), local('Quicksand'), url(https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap) format('woff2');
   font-display: swap;
 }
 
@@ -57,7 +57,7 @@ nav {
 }
 
 .Title {
-  font-size: 17px;
+  font-size: 2em;
   color: var(--text-light);
 }
 
@@ -67,11 +67,11 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 50%;
 }
 
 .ulContainer a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--text-light);
   text-decoration: none;
 }
@@ -563,4 +563,99 @@ p {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    padding: 20px;
+  }
+
+  .ulContainer {
+    display: none;
+  }
+
+  .containerMain {
+    margin-bottom: 10px;
+  }
+
+  .containerDescription {
+    margin: 0 10px 20px 0;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .containerText p {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+  .containerInfo p {
+    width: 100%;
+  }
+
+  .containerSkillProgress {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerProgress {
+    width: 80%;
+  }
+
+  .h2Progress {
+    text-align: center;
+  }
+
+  .progress1 {
+    font-size: .7rem;
+  }
+
+  .containerEducation {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0px 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .year {
+    width: 150px;
+  }
+
+  .liContainerEx {
+    width: 200px;
+
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .containerEducationExp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inputForm {
+    width: 100%;
+  }
+
+
+  .form {
+    width: 100%;
+  }
+
+  section {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
 }
